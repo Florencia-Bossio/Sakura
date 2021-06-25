@@ -15,6 +15,9 @@
         .style-link-footer {
             text-decoration: none;
             color: black;
+            &:hover {
+                color: #A04668;
+            }
         }
     }
     @media (max-width: 768px) {

@@ -139,6 +139,9 @@ header .contenedor .lista-productos:hover {
   text-decoration: none;
   color: black;
 }
+.style-footer li .style-link-footer:hover {
+  color: #A04668;
+}
 @media (max-width: 768px) {
   .style-footer {
     margin: 0;
