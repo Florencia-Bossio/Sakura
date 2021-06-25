@@ -1,0 +1,42 @@
+/* Inicio del cuerpo principal 'productos' */
+.container-foto-producto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #FEF5F1;
+    margin: 3.125rem 1.25rem;
+    @media (max-width: 320px) {
+        margin: 0;
+    }
+    .foto-producto {
+        margin: 1.9rem;
+        box-shadow: 1px 1px 5px #D0D3D9;
+        transition: all 0.5s;
+        background-color: white;
+        @media (max-width: 320px) {
+            margin: 0.5rem;
+        }
+        @media (min-width: 321px) and (max-width: 768px) {
+            margin: 1rem;
+        }
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.03);
+        }
+        .caracteristica-foto {
+            width: 14.4rem;
+            height: 15.6rem;
+        }
+        .pie-de-foto {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.9rem;
+            text-align: center;
+            padding: 1.25rem 0 0.5rem;
+            &:hover {
+                color: #A04668;
+                cursor: pointer;
+            }
+        }
+    }
+}
+/* Fin del cuerpo principal 'productos' */

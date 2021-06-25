@@ -1,0 +1,73 @@
+/* Inicio del cuerpo principal 'sobre mi' */
+.container-sobre-mi {
+    background-color: #fef5f1;
+    margin: 0 1.25rem 3.125rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (max-width: 768px) {
+        margin: 0;        
+    }
+    .style-p-sobre-mi {
+        width: 80%;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+        text-align: justify;
+        @media (max-width: 550px) {
+            width: 85%;
+            font-size: 0.8rem;
+        }
+        @media (max-width: 420px) {
+            width: 90%;
+            font-size: 0.75rem;
+        }
+        @media (max-width: 320px) {
+            width: 95%;
+            font-size: 0.7rem;
+        }
+        .style-sobremi-p1 {
+            color: #A04668;
+            font-weight: bold;
+        }
+    }
+
+    .img-sobre-mi {
+        width: 40%;
+        margin: 1.25rem 0 0.6rem;
+        @media (max-width: 768px) {
+            width: 50%;
+        }
+        @media (max-width: 550px) {
+            width: 60%;
+        }
+        @media (max-width: 420px) {
+            width: 70%;
+        }
+        @media (max-width: 320px) {
+            width: 75%;
+        }
+    }
+    .pie-de-foto-sobre-mi {
+        width: 40%;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.8rem;
+        line-height: 1.4rem;
+        text-align: justify;
+        font-style: italic;
+        margin-bottom: 1.25rem;
+        @media (max-width: 768px) {
+            width: 50%;
+        }
+        @media (max-width: 550px) {
+            width: 60%;
+        }
+        @media (max-width: 420px) {
+            width: 70%;
+        }
+        @media (max-width: 320px) {
+            width: 75%;
+        }
+    }
+}
+/* Fin del cuerpo principal 'sobre mi' */

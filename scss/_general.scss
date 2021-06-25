@@ -1,0 +1,29 @@
+/* General */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.style-subtitulo {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 3.125rem;
+    line-height: 5rem;
+    margin: 0 0 1rem;
+    @media (max-width: 550px) {
+        font-size: 2.5rem;
+        line-height: 3rem;
+        margin: 0.8rem 0;
+    }
+    @media (max-width: 420px) {
+        font-size: 2rem;
+        line-height: 3rem;
+        margin: 0;
+    }
+    @media (max-width: 350px) {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+}

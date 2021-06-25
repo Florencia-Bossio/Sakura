@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Icono -->
+    <link rel="icon" href="Fotos/Icono.jpeg">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+
+    <title>Productos</title>
+</head>
+
+<body>
+    <header>
+        <div class="nota-del-titulo">
+            <p>3 y 6 CUOTAS s/ interés</p>
+        </div>
+        <div class="titulo">
+            <a href="index.html"><h1>SAKURA</h1></a>
+        </div>
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light p-0">
+            <div class="container-fluid p-0 contenedor">
+                <a class="navbar-brand p-0 m-0" href="index.html"><img src="Fotos/Icono.jpeg" alt="Sakura" class="icono"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item px-4">
+                            <a class="nav-link active style-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item px-4 dropdown">
+                            <a class="nav-link active dropdown-toggle style-link" href="productos.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
+                            <ul class="dropdown-menu p-0" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item lista-productos" href="#mates">Mates</a></li>
+                                <li><a class="dropdown-item lista-productos" href="#centros-de-mesa">Centros de mesa</a></li>
+                                <li><a class="dropdown-item lista-productos" href="#macetas">Macetas</a></li>
+                                <li><a class="dropdown-item lista-productos" href="#velas">Velas</a></li>
+                                <li><a class="dropdown-item lista-productos" href="#combos">Combos</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item px-4">
+                            <a class="nav-link active style-link" href="envios.html">Envios</a>
+                        </li>
+                        <li class="nav-item px-4">
+                            <a class="nav-link active style-link" href="sobremi.html">Sobre Mí</a>
+                        </li>
+                        <li class="nav-item px-4">
+                            <a class="nav-link active style-link" href="contacto.html">Contactos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    
+    <div class="container-style-productos">
+        <h2 class="style-subtitulo">Productos</h2>
+    </div>
+
+    <main class="container-foto-producto">
+        <div class="foto-producto">
+            <img src="Fotos/Centrodemesa.jpg" alt="Centro de mesa con tecnica macramé, artesanal hecho con hilo de algodon, color natural" title="Centro de mesa" class="caracteristica-foto" id="centros-de-mesa">
+            <p class="pie-de-foto">Centro de mesa de 30cm</p>
+        </div>
+        <div class="foto-producto">
+            <img src="Fotos/VasoGeo.jpg" alt="Vaso de ceramica, color natural" title="Vaso Geo" class="caracteristica-foto" id="mates">
+            <p class="pie-de-foto">Vaso Geo</p>
+        </div>
+        <div class="foto-producto">
+            <img src="Fotos/mategeo.jpeg" alt="Mate de ceramica labrado con bombilla" title="Mate Geo" class="caracteristica-foto" id="mates">
+            <p class="pie-de-foto">Mate Geo</p>
+        </div>
+        <div class="foto-producto">
+            <img src="Fotos/MacetaAnana.jpg" alt="Maceta de cerámica color natural" title="Maceta Ananá" class="caracteristica-foto" id="macetas">
+            <p class="pie-de-foto">Maceta Ananá</p>
+        </div>
+        <div class="foto-producto">
+            <img src="Fotos/VelaMargarita.jpg" alt="Vela de cera de soja perfumada, en recipiente de ceramica labrado, color natural" title="Vela Margarita" class="caracteristica-foto" id="velas">
+            <p class="pie-de-foto">Vela Margarita</p>
+        </div>
+        <div class="foto-producto">
+            <img src="Fotos/VelaJacinta.jpg" alt="Vela de cera de soja perfumada, en recipiente de ceramica labrado, color natural" title="Vela Jacinta" class="caracteristica-foto" id="velas">
+            <p class="pie-de-foto">Vela Jacinta</p>
+        </div>
+        <div class="foto-producto">
+            <img src="Fotos/ComboEstrella.jpg" alt="Combo de vela de cera de soja perfumada y centro de mesa con macramé color natural" title="Combo Estrella" class="caracteristica-foto" id="combos">
+            <p class="pie-de-foto">Combo Estrella</p>
+        </div>
+        <div class="foto-producto">
+            <img src="Fotos/Caramel.jpeg" alt="Vela de cera de soja en contenedor de vidrio labrado" title="Caramel" class="caracteristica-foto" id="velas">
+            <p class="pie-de-foto">Caramel</p>
+        </div>
+    </main>
+    
+    <footer class="style-footer">
+        <ul>
+            <li>(221)555-6666</li>
+            <li>sakura.deco.hogar@gmail.com</li>
+            <li> <a href="https://www.instagram.com/sakura.deco.hogar/" target="_blank" class="style-link-footer">Instagram</a></li>
+        </ul>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+</body>
+</html>

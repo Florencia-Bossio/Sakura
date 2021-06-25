@@ -1,0 +1,121 @@
+/* Subtítulo 'envios' */
+.style-envio {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+    line-height: 3.125rem;
+    margin-bottom: 1.9rem;
+    @media (max-width: 550px) {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    @media (max-width: 420px) {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+    @media (max-width: 350px) {
+        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
+    }
+}
+/* Inicio del cuerpo principal 'envios' */
+/* Inicio de los links internos */
+.link {
+    display: flex;
+    justify-content: center;
+    .link2 {
+        list-style: none;
+        margin-bottom: 2.5rem;
+        @media (max-width: 320px) {
+            margin-bottom: 1rem;
+        }
+        li {
+            margin: 0.3rem 0;
+            @media (max-width: 320px) {
+                margin: 0 1.5rem 0.6rem 0;
+            }
+            .link-interno {
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 0.9rem;
+                line-height: 1.7rem;
+                color: black;
+                font-family: 'Montserrat', sans-serif;
+                @media (max-width: 550px) {
+                    font-size: 0.8rem;
+                }
+                @media (max-width: 420px) {
+                    font-size: 0.7rem;
+                }
+                @media (max-width: 350px) {
+                    font-size: 0.6rem;
+                    line-height: 0.5rem;
+                }
+                &:hover {
+                    color: #A04668;
+                    /* Fin de los links internos */
+                }
+            }
+        }
+    }
+}
+/* Inicio info envios*/
+.container-info-envios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fef5f1;
+    margin: 0 1.25rem 3.125rem;
+    @media (max-width:768px) {
+        margin: 0;
+    }
+    @media (max-width: 320px) {
+
+    }
+    .info {
+        width: 80%;
+        margin-bottom: 1.9rem;
+        @media (max-width: 550px) {
+            width: 85%;
+        }
+        @media (max-width: 420px) {
+            width: 90%;
+        }
+        @media (max-width: 320px) {
+            width: 95%;
+            margin-bottom: 1rem;
+        }
+        .info-envios {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.9rem;
+            line-height: 2.2rem;
+            background-image: linear-gradient(to right, #e3c5bb, #FEF5F1);
+            @media (max-width: 550px) {
+                font-size: 0.8rem;
+            }
+            @media (max-width: 420px) {
+                font-size: 0.75rem;
+            }
+            @media (max-width: 320px) {
+                font-size: 0.7rem;
+            }
+        }
+        .info-envios-p {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.9rem;
+            text-align: justify;
+            line-height: 1.5rem;
+            @media (max-width: 550px) {
+                font-size: 0.8rem;
+            }
+            @media (max-width: 420px) {
+                font-size: 0.75rem;
+            }
+            @media (max-width: 320px) {
+                font-size: 0.7rem;
+            }
+            /* Fin info envios */
+        }
+    }
+}
+/* Fin del cuerpo principal 'envios' */
