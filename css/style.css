@@ -53,6 +53,7 @@ header .nota-del-titulo {
 }
 header .nota-del-titulo p {
   padding: 0.57rem;
+  margin-bottom: 0;
 }
 @media (max-width: 320px) {
   header .nota-del-titulo {
@@ -87,7 +88,7 @@ header .titulo a h1 {
 }
 header .contenedor {
   /* Inicio del Navbar en Bootstrap*/
-  background-color: #FEF5F1;
+  background-color: white;
 }
 header .contenedor .icono {
   width: 4.5rem;
@@ -137,14 +138,17 @@ header .contenedor .lista-productos:hover {
     font-weight: bold;
   }
 }
-.style-footer li {
+.style-footer ul {
+  padding-left: 0;
+}
+.style-footer ul li {
   list-style: none;
 }
-.style-footer li .style-link-footer {
+.style-footer ul li .style-link-footer {
   text-decoration: none;
   color: black;
 }
-.style-footer li .style-link-footer:hover {
+.style-footer ul li .style-link-footer:hover {
   color: #A04668;
 }
 @media (max-width: 768px) {

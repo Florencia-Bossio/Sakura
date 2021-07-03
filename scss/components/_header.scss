@@ -13,6 +13,7 @@ header {
         color: nth($colores, 4);
         p {
             padding: 0.57rem;
+            margin-bottom: 0;
         }
         @media (max-width: 320px) {
             font-size: 0.6rem;
@@ -42,7 +43,7 @@ header {
     }
     .contenedor {
         /* Inicio del Navbar en Bootstrap*/
-        background-color: nth($colores, 4);
+        background-color: nth($colores, 7);
         .icono {
             width: 4.5rem;
             @media (max-width: 320px) {
