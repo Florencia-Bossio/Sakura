@@ -1,19 +1,19 @@
+/* Mixin */
+@import '../base/mixin';
+/* Listas */
+@import '../base/listas';
+
 /* Inicio del cuerpo principal 'sobre mi' */
 .container-sobre-mi {
-    background-color: #fef5f1;
+    @include flexbox( column, center);
+    background-color: nth($colores, 4);
     margin: 0 1.25rem 3.125rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     @media (max-width: 768px) {
         margin: 0;        
     }
     .style-p-sobre-mi {
         width: 80%;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 0.9rem;
-        line-height: 1.4rem;
-        text-align: justify;
+        @include texto( 0.9rem, 1.4rem, justify);
         @media (max-width: 550px) {
             width: 85%;
             font-size: 0.8rem;
@@ -27,7 +27,7 @@
             font-size: 0.7rem;
         }
         .style-sobremi-p1 {
-            color: #A04668;
+            color: nth($colores, 1);
             font-weight: bold;
         }
     }
@@ -50,10 +50,7 @@
     }
     .pie-de-foto-sobre-mi {
         width: 40%;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 0.8rem;
-        line-height: 1.4rem;
-        text-align: justify;
+        @include texto( 0.8rem, 1.4rem, justify);
         font-style: italic;
         margin-bottom: 1.25rem;
         @media (max-width: 768px) {

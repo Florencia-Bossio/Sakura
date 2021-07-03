@@ -1,14 +1,16 @@
+/* Mixin */
+@import '../base/mixin';
+/* Listas */
+@import '../base/listas';
+
 /* Inicio encabezado */
 header {
     margin: 1.25rem 1.25rem 0;
     .nota-del-titulo {
-        background-color:#A04668;
+        @include texto(0.75rem, 2.18rem, center);
+        background-color: nth($colores, 1);
         background-size: contain;
-        height: 2.18rem;
-        font-family: 'Montserrat', sans-serif;
-        color: white;
-        font-size: 0.75rem;
-        text-align: center;
+        color: nth($colores, 4);
         p {
             padding: 0.57rem;
         }
@@ -18,14 +20,14 @@ header {
         }
     }
     .titulo {
-        background-color: #DDA3B2;
+        background-color: nth($colores, 2);
         text-align: center;
         width: 100%;
         height: 5rem;
         a {
             text-decoration: none;
             h1 {
-                color:#A04668;
+                color: nth($colores, 1);
                 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
                 font-size: 3.125rem;
                 padding-top: 0.57rem;
@@ -40,7 +42,7 @@ header {
     }
     .contenedor {
         /* Inicio del Navbar en Bootstrap*/
-        background-color: white;
+        background-color: nth($colores, 4);
         .icono {
             width: 4.5rem;
             @media (max-width: 320px) {
@@ -52,14 +54,14 @@ header {
             font-weight: bolder;
             font-family: 'Montserrat', sans-serif;
             &:hover {
-                color: #A04668 !important;
+                color: nth($colores, 1) !important;
             }
         }
         .lista-productos {
             font-family: 'Montserrat', sans-serif;
             font-size: 0.9rem;
             &:hover {
-                background-color: #DDA3B2;
+                background-color: nth($colores, 2);
                 /* Fin del nabvar en Bootstrap */
             }
         }

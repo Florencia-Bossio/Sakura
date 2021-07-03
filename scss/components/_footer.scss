@@ -1,10 +1,12 @@
+/* Mixin */
+@import '../base/mixin';
+/* Listas */
+@import '../base/listas';
+
 /* Inicio pie de página */
 .style-footer {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.94rem;
-    line-height: 1.87rem;
-    text-align: center;
-    background-color: #E3C5BB;
+    @include texto( 0.94rem, 1.87rem, center);
+    background-color: nth($colores, 3);
     margin: 0 1.25rem 1.25rem;
     @media (max-width: 320px) {
         font-size: 0.8rem;
@@ -14,9 +16,9 @@
         list-style: none;
         .style-link-footer {
             text-decoration: none;
-            color: black;
+            color: nth($colores, 6);
             &:hover {
-                color: #A04668;
+                color: nth($colores, 1);
             }
         }
     }

@@ -1,3 +1,6 @@
+/* Mixin */
+@import '../base/mixin';
+
 /* General */
 * {
     padding: 0;
@@ -6,11 +9,8 @@
 }
 
 .style-subtitulo {
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    @include texto( 3.125rem, 5rem, center);
     text-transform: uppercase;
-    font-size: 3.125rem;
-    line-height: 5rem;
     margin: 0 0 1rem;
     @media (max-width: 550px) {
         font-size: 2.5rem;

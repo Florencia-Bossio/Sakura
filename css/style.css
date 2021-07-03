@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* Mixin */
 /* General */
 * {
   padding: 0;
@@ -7,11 +8,11 @@
 }
 
 .style-subtitulo {
-  text-align: center;
   font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
   font-size: 3.125rem;
   line-height: 5rem;
+  text-align: center;
+  text-transform: uppercase;
   margin: 0 0 1rem;
 }
 @media (max-width: 550px) {
@@ -35,18 +36,20 @@
   }
 }
 
+/* Mixin */
+/* Listas */
 /* Inicio encabezado */
 header {
   margin: 1.25rem 1.25rem 0;
 }
 header .nota-del-titulo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75rem;
+  line-height: 2.18rem;
+  text-align: center;
   background-color: #A04668;
   background-size: contain;
-  height: 2.18rem;
-  font-family: "Montserrat", sans-serif;
-  color: white;
-  font-size: 0.75rem;
-  text-align: center;
+  color: #FEF5F1;
 }
 header .nota-del-titulo p {
   padding: 0.57rem;
@@ -84,7 +87,7 @@ header .titulo a h1 {
 }
 header .contenedor {
   /* Inicio del Navbar en Bootstrap*/
-  background-color: white;
+  background-color: #FEF5F1;
 }
 header .contenedor .icono {
   width: 4.5rem;
@@ -117,6 +120,8 @@ header .contenedor .lista-productos:hover {
 }
 
 /* Fin del encabezado */
+/* Mixin */
+/* Listas */
 /* Inicio pie de página */
 .style-footer {
   font-family: "Montserrat", sans-serif;
@@ -149,6 +154,7 @@ header .contenedor .lista-productos:hover {
 }
 
 /* Fin del pie de página */
+/* Mixin */
 /* Inicio del cuerpo principal 'index' */
 /* Inicio del carrusel en Bootstrap */
 .contenedor-carousel {
@@ -246,11 +252,13 @@ header .contenedor .lista-productos:hover {
 }
 
 /* Fin del cuerpo principal 'index' */
+/* Mixin */
+/* Listas */
 /* Inicio del cuerpo principal 'productos' */
 .container-foto-producto {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   background-color: #FEF5F1;
   margin: 3.125rem 1.25rem;
 }
@@ -263,7 +271,7 @@ header .contenedor .lista-productos:hover {
   margin: 1.9rem;
   box-shadow: 1px 1px 5px #D0D3D9;
   transition: all 0.5s;
-  background-color: white;
+  background-color: #FEF5F1;
 }
 @media (max-width: 320px) {
   .container-foto-producto .foto-producto {
@@ -295,12 +303,14 @@ header .contenedor .lista-productos:hover {
 }
 
 /* Fin del cuerpo principal 'productos' */
+/* Mixin */
+/* Listas */
 /* Subtítulo 'envios' */
 .style-envio {
-  text-align: center;
   font-family: "Montserrat", sans-serif;
   font-size: 1.25rem;
   line-height: 3.125rem;
+  text-align: center;
   margin-bottom: 1.9rem;
 }
 @media (max-width: 550px) {
@@ -379,7 +389,7 @@ header .contenedor .lista-productos:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #fef5f1;
+  background-color: #FEF5F1;
   margin: 0 1.25rem 3.125rem;
 }
 @media (max-width: 768px) {
@@ -431,8 +441,8 @@ header .contenedor .lista-productos:hover {
 .container-info-envios .info .info-envios-p {
   font-family: "Montserrat", sans-serif;
   font-size: 0.9rem;
-  text-align: justify;
   line-height: 1.5rem;
+  text-align: justify;
   /* Fin info envios */
 }
 @media (max-width: 550px) {
@@ -452,13 +462,15 @@ header .contenedor .lista-productos:hover {
 }
 
 /* Fin del cuerpo principal 'envios' */
+/* Mixin */
+/* Listas */
 /* Inicio del cuerpo principal 'sobre mi' */
 .container-sobre-mi {
-  background-color: #fef5f1;
-  margin: 0 1.25rem 3.125rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #FEF5F1;
+  margin: 0 1.25rem 3.125rem;
 }
 @media (max-width: 768px) {
   .container-sobre-mi {
@@ -549,13 +561,15 @@ header .contenedor .lista-productos:hover {
 }
 
 /* Fin del cuerpo principal 'sobre mi' */
+/* Mixin */
+/* Listas */
 /* Inicio del cuerpo principal 'contacto' */
 .container-contactos {
-  margin: 1.25rem 1.25rem 3.125rem;
-  background-color: #FEF5F1;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 1.25rem 1.25rem 3.125rem;
+  background-color: #FEF5F1;
   font-family: "Montserrat", sans-serif;
   font-size: 0.9rem;
 }
@@ -602,7 +616,7 @@ header .contenedor .lista-productos:hover {
 }
 .container-contactos .boton {
   background-color: #A04668;
-  color: white;
+  color: #FEF5F1;
   border-radius: 30%;
   width: 90px;
   height: 50px;

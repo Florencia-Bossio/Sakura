@@ -1,0 +1,17 @@
+@mixin texto ($size, $lineheight, $textalign) {
+    font-family: 'Montserrat', sans-serif;
+    font-size: $size;
+    line-height: $lineheight;
+    text-align: $textalign;
+}
+
+@mixin flexbox ( $direction, $align) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+}
+
+@mixin flexbox2 ( $justify) {
+    display: flex;
+    justify-content: $justify;
+}

@@ -1,3 +1,6 @@
+/* Mixin */
+@import '../base/mixin';
+
 /* Inicio del cuerpo principal 'index' */
 /* Inicio del carrusel en Bootstrap */
 .contenedor-carousel {
@@ -14,8 +17,7 @@
 }
 /* Fin del carrusel en Bootstrap */
 .container-icono-index {
-    display: flex;
-    justify-content: center;
+    @include flexbox2( center);
     margin: 3.125rem 0 0;
     @media (max-width: 500px) {
         margin: 2rem;
@@ -44,10 +46,7 @@
     }
 }
 .definicion {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.56rem;
-    line-height: 5rem;
-    text-align: center;
+    @include texto( 1.56rem, 5rem, center);
     margin-bottom: 1.9rem;
     @media (max-width: 500px) {
         font-size: 1.4rem;

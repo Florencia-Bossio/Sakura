@@ -1,9 +1,11 @@
+/* Mixin */
+@import '../base/mixin';
+/* Listas */
+@import '../base/listas';
+
 /* Subtítulo 'envios' */
 .style-envio {
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.25rem;
-    line-height: 3.125rem;
+    @include texto(1.25rem, 3.125rem, center);
     margin-bottom: 1.9rem;
     @media (max-width: 550px) {
         font-size: 1rem;
@@ -21,8 +23,7 @@
 /* Inicio del cuerpo principal 'envios' */
 /* Inicio de los links internos */
 .link {
-    display: flex;
-    justify-content: center;
+    @include flexbox2( center);
     .link2 {
         list-style: none;
         margin-bottom: 2.5rem;
@@ -39,7 +40,7 @@
                 font-weight: bold;
                 font-size: 0.9rem;
                 line-height: 1.7rem;
-                color: black;
+                color: nth($colores, 6);
                 font-family: 'Montserrat', sans-serif;
                 @media (max-width: 550px) {
                     font-size: 0.8rem;
@@ -52,7 +53,7 @@
                     line-height: 0.5rem;
                 }
                 &:hover {
-                    color: #A04668;
+                    color: nth($colores, 1);
                     /* Fin de los links internos */
                 }
             }
@@ -61,10 +62,8 @@
 }
 /* Inicio info envios*/
 .container-info-envios {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #fef5f1;
+    @include flexbox( column, center);
+    background-color: nth($colores, 4);
     margin: 0 1.25rem 3.125rem;
     @media (max-width:768px) {
         margin: 0;
@@ -101,10 +100,7 @@
             }
         }
         .info-envios-p {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 0.9rem;
-            text-align: justify;
-            line-height: 1.5rem;
+            @include texto( 0.9rem, 1.5rem, justify);
             @media (max-width: 550px) {
                 font-size: 0.8rem;
             }
