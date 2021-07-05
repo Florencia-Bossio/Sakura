@@ -4,7 +4,7 @@
 /* Inicio del cuerpo principal 'index' */
 /* Inicio del carrusel en Bootstrap */
 .contenedor-carousel {
-    height: 35rem;
+    height: 40rem;
     padding: 0 1.25rem;
     @media (min-width: 321px) and (max-width: 768px) {
         height: 20rem;
@@ -13,6 +13,9 @@
     @media (max-width: 320px) {
         height: 12rem;
         padding: 0;
+    }
+    .img-carrusel {
+        height: 40rem
     }
 }
 /* Fin del carrusel en Bootstrap */
