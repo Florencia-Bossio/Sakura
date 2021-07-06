@@ -178,14 +178,14 @@ header .contenedor .lista-productos:hover {
   }
 }
 .contenedor-carousel .img-carrusel {
-  height: 40rem;
+  height: 100%;
 }
 
 /* Fin del carrusel en Bootstrap */
 .container-icono-index {
   display: flex;
   justify-content: center;
-  margin: 3.125rem 0 0;
+  margin: 2rem 0 !important;
 }
 @media (max-width: 500px) {
   .container-icono-index {
