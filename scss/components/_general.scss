@@ -27,3 +27,22 @@
         font-weight: bold;
     }
 }
+
+.app-whatsapp {
+    position: fixed;
+    right: 26px;
+    bottom: 80px;
+    width: 50px;
+    z-index: 1000;
+    @media (max-width: 990px) {
+        bottom: 90px;
+        width: 45px;
+    }
+    @media (max-width: 768px) {
+        display: none;
+    }
+    .img-whatsapp {
+        width: 100%;
+        height: auto;
+    }
+}

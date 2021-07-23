@@ -29,6 +29,9 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/4c2cda57fd.js" crossorigin="anonymous"></script>
+
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
@@ -47,7 +50,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light p-0">
             <div class="container-fluid p-0 contenedor">
                 <a class="navbar-brand p-0 m-0" href="index.html"><img src="Fotos/Icono.jpeg" alt="Sakura" class="icono"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler menu-hamburguesa" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
@@ -75,6 +78,9 @@
                             <a class="nav-link active style-link" href="contacto.html">Contactos</a>
                         </li>
                     </ul>
+                    <div class="contenedor-compras">
+                        <img src="fotos/carrito-de-compras.png" alt="Carrito de compras" class="carrito-compras">
+                    </div>
                 </div>
             </div>
         </nav>
@@ -99,15 +105,83 @@
                 <button type="button" class="boton">Enviar</button>
             </div>
         </div>
+        <div>
+            <a class="app-whatsapp" href="https://api.whatsapp.com/send?phone=542281549575&text=Hola!" target="_blank" title="Enlace directo para comunicarte por whatsapp">
+                <img src="fotos/whatsapp.png" alt="Whatsapp" class="img-whatsapp" loading="lazy">
+            </a>
+        </div>
     </section>
 
-    <footer class="style-footer">
-        <ul>
-            <li>(221)555-6666</li>
-            <li>sakura.deco.hogar@gmail.com</li>
-            <li> <a href="https://www.instagram.com/sakura.deco.hogar/" target="_blank" class="style-link-footer" title="Acceso directo a nuestra 
-            cuenta de Instagram">Instagram</a></li>
-        </ul>
+    <section class="contenedor-mapa">
+        <h3 class="donde-encontrarnos">
+            Dónde encontrarnos?
+        </h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.3819285416557!2d-57.95529698647888!3d-34.921957201504576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e62e3fc93575%3A0x6ffaec3bf616e000!2sPlaza%20Moreno!5e0!3m2!1ses!2sar!4v1627049561612!5m2!1ses!2sar" 
+        width="600" height="450" style="border:0;" allowfullscreen="" class="mapa" loading="lazy"></iframe>
+    </section>
+
+    <!-- Inicio pie de página -->
+    <footer class="contenedor-footer">
+        <div class="row">
+            <!-- Redes sociales -->
+            <div class="col-lg-4 col-md-6 contenedor-redes">
+                <p class="style-p-redes">
+                    Sigamos conectados
+                </p>
+                <ul class="lista-redes">
+                    <li><a href="https://web.whatsapp.com/" target="_blank" title="Acceso directo para contactarnos por whatsapp">
+                        <i class="fab fa-whatsapp-square style-wsp"></i></a></li>
+                    <li><a href="contacto.html" title="Acceso directo para contactarnos por mail">
+                        <i class="fas fa-envelope-open style-mail"></a></i></li>
+                    <li><a href="https://www.instagram.com/sakura.deco.hogar/" target="_blank" title="Acceso directo a nuestra cuenta de Instagram">
+                        <i class="fab fa-instagram-square style-ig"></a></i></li>
+                    <li><a href="https://www.facebook.com/" target="_blank" title="Acceso directo a nuestra cuenta de Facebook">
+                        <i class="fab fa-facebook style-fb"></a></i></li>
+                </ul>
+            </div>
+            <!-- Link envios -->
+            <div class="col-lg-4 col-md-6 contenedor-envios-footer">
+                <p class="p-envios-footer">
+                    ¿Querés saber más?
+                </p>
+                <ul class="lista-envios-footer">
+                    <li><a href="envios.html" class="info-envios-footer">¿A través de que empresa envian mi compra?</a></li>
+                    <li><a href="envios.html" class="info-envios-footer">¿Qué costo tiene un envío?</a></li>
+                    <li><a href="envios.html" class="info-envios-footer">¿Qué pasa si el producto que recibo llega roto?</a></li>
+                    <li><a href="envios.html" class="info-envios-footer">¿Cómo sé que voy a recibir mi compra?</a></li>
+                    <li><a href="envios.html" class="info-envios-footer">¿Qué pasa si viene OCA y no estoy para recibirlo?</a></li>
+                    <li><a href="envios.html" class="info-envios-footer">¿Qué pasa si pasan más de 5 días y no voy a retirar mi pedido a OCA?</a></li>
+                </ul>
+            </div>
+            <!-- Medios de pago y medios de envio -->
+            <div class="col-lg-4 col-md-6 contenedor-medios-footer">
+                <p class="medios-pago-footer">
+                    Medios de pago
+                </p>
+                <div class="contenedor-tarjeta-footer">
+                    <img src="fotos/visa@2x.png" alt="Tarjeta visa" title="Tarjeta visa" class="tarjeta-footer" loading="lazy">
+                    <img src="fotos/mercadopago@2x.png" alt="Mercado pago" title="Mercado pago"class="tarjeta-footer" loading="lazy">
+                    <img src="fotos/pagofacil@2x.png" alt="Pago fácil" title="Pago fácil"class="tarjeta-footer" loading="lazy">
+                    <img src="fotos/rapipago@2x.png" alt="Rapipago" title="Rapipago"class="tarjeta-footer" loading="lazy">
+                    <img src="fotos/mastercard@2x.png" alt="Mastercard" title="Mastercard"class="tarjeta-footer" loading="lazy">
+                </div>
+
+                <p class="medios-envio-footer">
+                    Medios de envío
+                </p>
+                <img src="fotos/oca@2x.png" alt="OCA" title="OCA" class="envios-footer" loading="lazy">
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class="contenedor-copyright">
+            <p class="copyright">
+                Copyright Sakura - 2021. Todos los derechos reservados.
+            </p>
+            <p class="creadora">
+                Creado por Florencia Bossio
+            </p>
+        </div>
+    
     </footer>
 
     <script async src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>

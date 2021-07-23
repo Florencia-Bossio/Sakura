@@ -30,6 +30,9 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/4c2cda57fd.js" crossorigin="anonymous"></script>
+
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
@@ -45,11 +48,11 @@
         <div class="titulo">
             <a href="index.html"><h1>SAKURA</h1></a>
         </div>
-        
+        <!-- Inicio de la barra de navegación -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light p-0">
             <div class="container-fluid p-0 contenedor">
                 <a class="navbar-brand p-0 m-0" href="index.html"><img src="Fotos/Icono.jpeg" alt="Sakura" class="icono"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler menu-hamburguesa" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
@@ -77,6 +80,9 @@
                             <a class="nav-link active style-link" href="contacto.html">Contactos</a>
                         </li>
                     </ul>
+                    <div class="contenedor-compras">
+                        <img src="fotos/carrito-de-compras.png" alt="Carrito de compras" class="carrito-compras">
+                    </div>
                 </div>
             </div>
         </nav>
@@ -89,74 +95,155 @@
 
     <main class="container-foto-producto">
         <div class="foto-producto">
-            <img src="Fotos/Centrodemesa.jpg" alt="Centro de mesa con tecnica macramé, artesanal hecho con hilo de algodon, 
+            <img src="fotos/Centrodemesa.jpg" alt="Centro de mesa con tecnica macramé, artesanal hecho con hilo de algodon, 
             color natural" title="Centro de mesa" class="caracteristica-foto" id="centros-de-mesa" loading="lazy">
             <p class="pie-de-foto">Centro de mesa de 30cm</p>
         </div>
         <div class="foto-producto">
-            <img src="Fotos/VasoGeo.jpg" alt="Vaso de ceramica, color natural" title="Vaso Geo" class="caracteristica-foto" 
+            <img src="fotos/VasoGeo.jpg" alt="Vaso de ceramica, color natural" title="Vaso Geo" class="caracteristica-foto" 
             id="mates" loading="lazy">
             <p class="pie-de-foto">Vaso Geo</p>
         </div>
         <div class="foto-producto">
-            <img src="Fotos/mategeo.jpeg" alt="Mate de ceramica labrado con bombilla" title="Mate Geo" class="caracteristica-foto" 
+            <img src="fotos/mategeo.jpeg" alt="Mate de ceramica labrado con bombilla" title="Mate Geo" class="caracteristica-foto" 
             loading="lazy">
             <p class="pie-de-foto">Mate Geo</p>
         </div>
         <div class="foto-producto">
-            <img src="Fotos/MacetaAnana.jpg" alt="Maceta de cerámica color natural" title="Maceta Ananá" class="caracteristica-foto" 
+            <img src="fotos/MacetaAnana.jpg" alt="Maceta de cerámica color natural" title="Maceta Ananá" class="caracteristica-foto" 
             id="macetas" loading="lazy">
             <p class="pie-de-foto">Maceta Ananá</p>
         </div>
         <div class="foto-producto">
-            <img src="Fotos/CactusMini.jpeg" alt="Maceta de cerámica color natural" title="Maceta cactus mini" class="caracteristica-foto" 
+            <img src="fotos/macetaCactusGrande.jpeg" alt="Maceta de cerámica color natural" title="Maceta Cactus Grande" class="caracteristica-foto" 
+            loading="lazy">
+            <p class="pie-de-foto">Maceta Cactus Grande</p>
+        </div>
+        <div class="foto-producto">
+            <img src="fotos/CactusMini.jpeg" alt="Maceta de cerámica color natural" title="Maceta cactus mini" class="caracteristica-foto" 
             loading="lazy">
             <p class="pie-de-foto">Maceta cactus mini</p>
         </div>
         <div class="foto-producto">
-            <img src="Fotos/Elefante.jpeg" alt="Maceta de cerámica color natural" title="Maceta elefante" class="caracteristica-foto" 
+            <img src="fotos/Elefante.jpeg" alt="Maceta de cerámica color natural" title="Maceta elefante" class="caracteristica-foto" 
             loading="lazy">
             <p class="pie-de-foto">Maceta elefante</p>
         </div>
         <div class="foto-producto">
-            <img src="Fotos/VelaMargarita.jpg" alt="Vela de cera de soja perfumada, en recipiente de ceramica labrado, color natural" 
+            <img src="fotos/VelaMargarita.jpg" alt="Vela de cera de soja perfumada, en recipiente de ceramica labrado, color natural" 
             title="Vela Margarita" class="caracteristica-foto" id="velas" loading="lazy">
             <p class="pie-de-foto">Vela Margarita</p>
         </div>
         <div class="foto-producto">
-            <img src="Fotos/VelaJacinta.jpg" alt="Vela de cera de soja perfumada, en recipiente de ceramica labrado, color natural" 
+            <img src="fotos/VelaJacinta.jpg" alt="Vela de cera de soja perfumada, en recipiente de ceramica labrado, color natural" 
             title="Vela Jacinta" class="caracteristica-foto" loading="lazy">
             <p class="pie-de-foto">Vela Jacinta</p>
         </div>
         <div class="foto-producto">
-            <img src="Fotos/ComboEstrella.jpg" alt="Combo de vela de cera de soja perfumada y centro de mesa con macramé color natural" 
+            <img src="fotos/velasFrasco.jpeg" alt="Velas de cera de soja perfumadas, en recipientes de vidrio con tapa" 
+            title="Velas en frasco" class="caracteristica-foto" loading="lazy">
+            <p class="pie-de-foto">Velas en frasco</p>
+        </div>
+        <div class="foto-producto">
+            <img src="fotos/velaEstrella.jpeg" alt="Vela de cera de soja perfumada, en recipiente de ceramica con forma de estrella, color natural" 
+            title="Vela Estrella" class="caracteristica-foto" loading="lazy">
+            <p class="pie-de-foto">Vela Estrella</p>
+        </div>
+        <div class="foto-producto">
+            <img src="fotos/ComboEstrella.jpg" alt="Combo de vela de cera de soja perfumada y centro de mesa con macramé color natural" 
             title="Combo Estrella" class="caracteristica-foto" id="combos" loading="lazy">
             <p class="pie-de-foto">Combo Estrella</p>
         </div>
         <div class="foto-producto">
-            <img src="Fotos/Caramel.jpeg" alt="Vela de cera de soja en contenedor de vidrio labrado" title="Vela Caramel" 
+            <img src="fotos/Caramel.jpeg" alt="Vela de cera de soja en contenedor de vidrio labrado" title="Vela Caramel" 
             class="caracteristica-foto" loading="lazy">
             <p class="pie-de-foto">Caramel</p>
         </div>
         <div class="foto-producto">
-            <img src="Fotos/VelaVaso.jpeg" alt="Vela de cera de soja en contenedor de vidrio labrado" title="Vela en vasos de vidrio labrados" 
+            <img src="fotos/VelaVaso.jpeg" alt="Vela de cera de soja en contenedor de vidrio labrado" title="Vela en vasos de vidrio labrados" 
             class="caracteristica-foto" loading="lazy">
             <p class="pie-de-foto">Vela en vasos labrados</p>
         </div>
         <div class="foto-producto">
-            <img src="Fotos/VelaCopa.jpeg" alt="Vela de cera de soja en copa de vidrio labrado" title="Vela en copa de vidrio labrados" 
+            <img src="fotos/VelaCopa.jpeg" alt="Vela de cera de soja en copa de vidrio labrado" title="Vela en copa de vidrio labrado" 
             class="caracteristica-foto" loading="lazy">
             <p class="pie-de-foto">Vela en copa labrada</p>
         </div>
+        <div class="foto-producto">
+            <img src="fotos/velaGold.jpeg" alt="Vela de cera de soja en vaso de vidrio labrado con borde dorado" title="Vela en vaso de vidrio labrado" 
+            class="caracteristica-foto" loading="lazy">
+            <p class="pie-de-foto">Vela en vaso labrado</p>
+        </div>
+
+        <div>
+            <a class="app-whatsapp" href="https://api.whatsapp.com/send?phone=542281549575&text=Hola!" target="_blank" title="Enlace directo para comunicarte por whatsapp">
+                <img src="fotos/whatsapp.png" alt="Whatsapp" class="img-whatsapp" loading="lazy">
+            </a>
+        </div>
     </main>
     
-    <footer class="style-footer">
-        <ul>
-            <li>(221)555-6666</li>
-            <li>sakura.deco.hogar@gmail.com</li>
-            <li> <a href="https://www.instagram.com/sakura.deco.hogar/" target="_blank" class="style-link-footer" title="Acceso directo a nuestra 
-            cuenta de Instagram">Instagram</a></li>
-        </ul>
+    <!-- Inicio pie de página -->
+    <footer class="contenedor-footer">
+        <div class="row">
+            <!-- Redes sociales -->
+            <div class="col-lg-4 col-md-6 contenedor-redes">
+                <p class="style-p-redes">
+                    Sigamos conectados
+                </p>
+                <ul class="lista-redes">
+                    <li><a href="https://web.whatsapp.com/" target="_blank" title="Acceso directo para contactarnos por whatsapp">
+                        <i class="fab fa-whatsapp-square style-wsp"></i></a></li>
+                    <li><a href="contacto.html" title="Acceso directo para contactarnos por mail">
+                        <i class="fas fa-envelope-open style-mail"></a></i></li>
+                    <li><a href="https://www.instagram.com/sakura.deco.hogar/" target="_blank" title="Acceso directo a nuestra cuenta de Instagram">
+                        <i class="fab fa-instagram-square style-ig"></a></i></li>
+                    <li><a href="https://www.facebook.com/" target="_blank" title="Acceso directo a nuestra cuenta de Facebook">
+                        <i class="fab fa-facebook style-fb"></a></i></li>
+                </ul>
+            </div>
+            <!-- Link envios -->
+            <div class="col-lg-4 col-md-6 contenedor-envios-footer">
+                <p class="p-envios-footer">
+                    ¿Querés saber más?
+                </p>
+                <ul class="lista-envios-footer">
+                    <li><a href="envios.html" class="info-envios-footer">¿A través de que empresa envian mi compra?</a></li>
+                    <li><a href="envios.html" class="info-envios-footer">¿Qué costo tiene un envío?</a></li>
+                    <li><a href="envios.html" class="info-envios-footer">¿Qué pasa si el producto que recibo llega roto?</a></li>
+                    <li><a href="envios.html" class="info-envios-footer">¿Cómo sé que voy a recibir mi compra?</a></li>
+                    <li><a href="envios.html" class="info-envios-footer">¿Qué pasa si viene OCA y no estoy para recibirlo?</a></li>
+                    <li><a href="envios.html" class="info-envios-footer">¿Qué pasa si pasan más de 5 días y no voy a retirar mi pedido a OCA?</a></li>
+                </ul>
+            </div>
+            <!-- Medios de pago y medios de envio -->
+            <div class="col-lg-4 col-md-6 contenedor-medios-footer">
+                <p class="medios-pago-footer">
+                    Medios de pago
+                </p>
+                <div class="contenedor-tarjeta-footer">
+                    <img src="fotos/visa@2x.png" alt="Tarjeta visa" title="Tarjeta visa" class="tarjeta-footer" loading="lazy">
+                    <img src="fotos/mercadopago@2x.png" alt="Mercado pago" title="Mercado pago"class="tarjeta-footer" loading="lazy">
+                    <img src="fotos/pagofacil@2x.png" alt="Pago fácil" title="Pago fácil"class="tarjeta-footer" loading="lazy">
+                    <img src="fotos/rapipago@2x.png" alt="Rapipago" title="Rapipago"class="tarjeta-footer" loading="lazy">
+                    <img src="fotos/mastercard@2x.png" alt="Mastercard" title="Mastercard"class="tarjeta-footer" loading="lazy">
+                </div>
+
+                <p class="medios-envio-footer">
+                    Medios de envío
+                </p>
+                <img src="fotos/oca@2x.png" alt="OCA" title="OCA" class="envios-footer" loading="lazy">
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class="contenedor-copyright">
+            <p class="copyright">
+                Copyright Sakura - 2021. Todos los derechos reservados.
+            </p>
+            <p class="creadora">
+                Creado por Florencia Bossio
+            </p>
+        </div>
+    
     </footer>
     
     <script async src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>

@@ -68,4 +68,55 @@
         }
     }
 }
+
+.contenedor-mapa {
+    margin: 0 1.25rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (max-width: 420px) {
+        margin: 0;
+    }
+    @media (max-width: 350px) {
+        margin: 0;
+    }
+    .donde-encontrarnos {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 2.5rem;
+        @media (max-width: 768px) {
+            margin-top: 1.8rem;
+        }
+        @media (max-width: 550px) {
+            font-size: 1.25rem;
+            margin-top: 1.8rem;
+        }
+        @media (max-width: 420px) {
+            font-size: 1rem;
+            margin-top: 1rem;
+        }
+        @media (max-width: 350px) {
+            font-size: 0.8rem;
+        }
+    }
+    .mapa {
+        @media (max-width: 768px) {
+            width: 500px;
+            height: 400px;
+        }
+        @media (max-width: 550px) {
+            width: 400px;
+            height: 350px;
+        }
+        @media (max-width: 420px) {
+            width: 340px;
+            height: 320px;
+        }
+        @media (max-width: 350px) {
+            width: 275px;
+            height: 260px;
+        }
+    }
+}
 /* Fin del cuerpo principal 'contacto' */

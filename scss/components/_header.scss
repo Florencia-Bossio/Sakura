@@ -6,6 +6,9 @@
 /* Inicio encabezado */
 header {
     margin: 1.25rem 1.25rem 0;
+    @media (max-width: 768px) {
+        margin: 0;
+    }
     .nota-del-titulo {
         @include texto(0.75rem, 2.18rem, center);
         background-color: nth($colores, 1);
@@ -25,6 +28,9 @@ header {
         text-align: center;
         width: 100%;
         height: 5rem;
+        @media (max-width: 320px) {
+            height: 3.75rem;
+        }
         a {
             text-decoration: none;
             h1 {
@@ -37,18 +43,22 @@ header {
                 }
             }
         }
-        @media (max-width: 320px) {
-            height: 3.75rem;
-        }
     }
     .contenedor {
         /* Inicio del Navbar en Bootstrap*/
         background-color: nth($colores, 7);
+        @media (max-width: 768px) {
+            margin: 0;
+        }
         .icono {
             width: 4.5rem;
+            margin-left: 1rem;
             @media (max-width: 320px) {
                 width: 3.5rem;
             }
+        }
+        .menu-hamburguesa {
+            margin-right: 1rem;
         }
         .style-link {
             font-size: 0.9rem;
@@ -66,9 +76,17 @@ header {
                 /* Fin del nabvar en Bootstrap */
             }
         }
-    }
-    @media (max-width: 768px) {
-        margin: 0;
+        .contenedor-compras {
+            position: absolute;
+            right: 40px;
+            width: 30px;
+            .carrito-compras {
+                width: 100%;
+            }
+            @media (max-width: 991px) {
+                display: none;
+            }
+        }
     }
 }
 /* Fin del encabezado */

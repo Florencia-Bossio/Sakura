@@ -27,6 +27,7 @@
     .link2 {
         list-style: none;
         margin-bottom: 2.5rem;
+        padding-left: 0;
         @media (max-width: 320px) {
             margin-bottom: 1rem;
         }
@@ -42,7 +43,7 @@
                 line-height: 1.7rem;
                 color: nth($colores, 6);
                 font-family: 'Montserrat', sans-serif;
-                @media (max-width: 550px) {
+                @media (max-width: 640px) {
                     font-size: 0.8rem;
                 }
                 @media (max-width: 420px) {
@@ -67,9 +68,6 @@
     margin: 0 1.25rem 3.125rem;
     @media (max-width:768px) {
         margin: 0;
-    }
-    @media (max-width: 320px) {
-
     }
     .info {
         width: 80%;
