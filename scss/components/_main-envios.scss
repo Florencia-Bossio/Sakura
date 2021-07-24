@@ -32,9 +32,9 @@
             margin-bottom: 1rem;
         }
         li {
-            margin: 0.3rem 0;
+            margin: 0.3rem 1.50rem;
             @media (max-width: 320px) {
-                margin: 0 1.5rem 0.6rem 0;
+                margin: 0 1.5rem 0.6rem;
             }
             .link-interno {
                 text-decoration: none;
@@ -46,8 +46,11 @@
                 @media (max-width: 640px) {
                     font-size: 0.8rem;
                 }
-                @media (max-width: 420px) {
-                    font-size: 0.7rem;
+                @media (max-width: 540px) {
+                    font-size: 0.78rem;
+                }
+                @media (max-width: 500px) {
+                    font-size: 0.74rem;
                 }
                 @media (max-width: 350px) {
                     font-size: 0.6rem;
@@ -93,6 +96,10 @@
             @media (max-width: 420px) {
                 font-size: 0.75rem;
             }
+            @media (max-width: 350px) {
+                font-size: 0.75rem;
+                margin: 0 0.3rem;
+            }
             @media (max-width: 320px) {
                 font-size: 0.7rem;
             }
@@ -105,8 +112,12 @@
             @media (max-width: 420px) {
                 font-size: 0.75rem;
             }
+            @media (max-width: 350px) {
+                margin: 0 0.3rem;
+            }
             @media (max-width: 320px) {
                 font-size: 0.7rem;
+                margin: 0 0.3rem;
             }
             /* Fin info envios */
         }

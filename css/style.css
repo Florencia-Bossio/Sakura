@@ -635,11 +635,11 @@ header .contenedor .contenedor-compras .carrito-compras {
   }
 }
 .link .link2 li {
-  margin: 0.3rem 0;
+  margin: 0.3rem 1.5rem;
 }
 @media (max-width: 320px) {
   .link .link2 li {
-    margin: 0 1.5rem 0.6rem 0;
+    margin: 0 1.5rem 0.6rem;
   }
 }
 .link .link2 li .link-interno {
@@ -655,9 +655,14 @@ header .contenedor .contenedor-compras .carrito-compras {
     font-size: 0.8rem;
   }
 }
-@media (max-width: 420px) {
+@media (max-width: 540px) {
   .link .link2 li .link-interno {
-    font-size: 0.7rem;
+    font-size: 0.78rem;
+  }
+}
+@media (max-width: 500px) {
+  .link .link2 li .link-interno {
+    font-size: 0.74rem;
   }
 }
 @media (max-width: 350px) {
@@ -720,6 +725,12 @@ header .contenedor .contenedor-compras .carrito-compras {
     font-size: 0.75rem;
   }
 }
+@media (max-width: 350px) {
+  .container-info-envios .info .info-envios {
+    font-size: 0.75rem;
+    margin: 0 0.3rem;
+  }
+}
 @media (max-width: 320px) {
   .container-info-envios .info .info-envios {
     font-size: 0.7rem;
@@ -742,9 +753,15 @@ header .contenedor .contenedor-compras .carrito-compras {
     font-size: 0.75rem;
   }
 }
+@media (max-width: 350px) {
+  .container-info-envios .info .info-envios-p {
+    margin: 0 0.3rem;
+  }
+}
 @media (max-width: 320px) {
   .container-info-envios .info .info-envios-p {
     font-size: 0.7rem;
+    margin: 0 0.3rem;
   }
 }
 
